@@ -1,0 +1,41 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+#canvas-mask{
+	position: absolute;
+ /* left: 50%;
+  top: 50%;*/
+  -webkit-transform: translate(-0%, -0%);
+  transform: translate(-0%, -0%);
+
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  overflow: hidden;
+}
+ #canvas-mask img{
+	overflow: hidden;		
+}
+
+.father{}
+
+.inter{}
+
+.rangers{
+	position: fixed;
+	bottom: 10%;
+	right: 10%;
+	z-index: 9999;
+}
+
+#div_posicao{
+	position: absolute;
+	top: 2%;
+	left: 2%;
+	z-index: 9999;
+}
+.ajust{
+	max-width: 100%;
+	display: block;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Protetores da Cuesta - PROTÓTIPO</title>
+	<link rel="stylesheet" href="css/dragdealer.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="rangers">
+		<span id="valBox">0</span><br>
+   	<input id="range" type="range" min="5" max="10" step="1">
+	</div>
+	
+	<div id="canvas-mask" class="dragdealer">
+		<div class="handle" onmousemove="getPos(event)" ondblclick="registra(this)" onmouseout="stopTracking()" > 
+			<img src="images/map.jpg" alt="Map" class="adjust">
+		
+			<div id="div_posicao"></div>
+
+			<div id="div_adicionar" style="width: 200px; display:none; position: absolute; background: white; text-align: right">
+				<div style="text-align: right; background: #CCCCCC">
+				    <input type="button" style="background: white" value=" x " onclick="bt_esconder(this)" >
+				</div>
+
+				<input type="text" name="add_nome" id="add_nome" placeholder="Informe o nome">
+				<input type="button" name="btAdd" value="Adicionar" onclick="adicionar_registro(this)" >
+			</div>
+		</div>
+	</div><!-- / canvas-mask -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/dragdealer.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
